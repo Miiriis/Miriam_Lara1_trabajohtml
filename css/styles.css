@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: maroon;
+
+}
+
+main{
+    flex: 1;
+}
+
+header {
+    display: flex;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: maroon;
+}
+
+.titulo {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.icono{
+    width: 40px;
+    height: 40px;
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.2 ease-in-out;
+}
+
+.barra a:hover {
+    color: black;
+}
+
+.barra a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+.portada  img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.empiece {
+    color: white;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.contenido-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+.texto-izquierda, .texto-derecha {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+.portada {
+    flex: 2;
+}
+
+.boton-uno, .boton-dos {
+    cursor: pointer;
+    border: 2px solid white;
+    width: 150px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    display: block;
+    margin: 10px auto;
+}
+
+.boton-uno:hover{
+    background-color: rgb(26, 219, 19);
+    border: 2px solid white;
+}
+
+.boton-dos:hover{
+    background-color: rgb(26, 219, 19);
+    border: 2px solid white;
+}
+
+.titulo-clases {
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.contenedor-actividades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.foto-actividades {
+    width: 90%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    color: white;
+}
+
+.foto-actividades img {
+    width: 90%;
+    border-radius: 10px;
+    display: block;
+   height: auto;
+}
+
+.titulo-contacto {
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.formulario {
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea {
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 50px auto;
+    flex: 2;
+    margin-bottom: 20px;
+}
+
+.contenedor-precios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.contenedor-precios p {
+    flex: 0 0 25%;
+    text-align: center;
+    margin: 40px 0;
+    color: white;
+    flex: 1;
+    
+}
+
+.btn-enviar {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(77, 32, 21);
+}
+
+.profesores img {
+    width: 40%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.tabla-clases {
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px;
+}
+
+.th, td {
+    border: 1px solid black;
+}
+
+.horarios-mañana{
+    color: turquoise;
+}
+
+.footer {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    min-height: auto;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px 5px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.elemento {
+    list-style: none;
+}
+
+.icon-elem {
+    list-style: none;
+}
+
+.menu-icono {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+}
+
+.menu-icono:hover {
+    opacity: 1;
+}
